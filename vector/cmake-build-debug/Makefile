@@ -123,6 +123,33 @@ vector/fast:
 	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/build
 .PHONY : vector/fast
 
+Vector2.o: Vector2.cpp.o
+
+.PHONY : Vector2.o
+
+# target to build an object file
+Vector2.cpp.o:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/Vector2.cpp.o
+.PHONY : Vector2.cpp.o
+
+Vector2.i: Vector2.cpp.i
+
+.PHONY : Vector2.i
+
+# target to preprocess a source file
+Vector2.cpp.i:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/Vector2.cpp.i
+.PHONY : Vector2.cpp.i
+
+Vector2.s: Vector2.cpp.s
+
+.PHONY : Vector2.s
+
+# target to generate assembly for a file
+Vector2.cpp.s:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/Vector2.cpp.s
+.PHONY : Vector2.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +177,60 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+vector2.o: vector2.cpp.o
+
+.PHONY : vector2.o
+
+# target to build an object file
+vector2.cpp.o:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/vector2.cpp.o
+.PHONY : vector2.cpp.o
+
+vector2.i: vector2.cpp.i
+
+.PHONY : vector2.i
+
+# target to preprocess a source file
+vector2.cpp.i:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/vector2.cpp.i
+.PHONY : vector2.cpp.i
+
+vector2.s: vector2.cpp.s
+
+.PHONY : vector2.s
+
+# target to generate assembly for a file
+vector2.cpp.s:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/vector2.cpp.s
+.PHONY : vector2.cpp.s
+
+vector3.o: vector3.cpp.o
+
+.PHONY : vector3.o
+
+# target to build an object file
+vector3.cpp.o:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/vector3.cpp.o
+.PHONY : vector3.cpp.o
+
+vector3.i: vector3.cpp.i
+
+.PHONY : vector3.i
+
+# target to preprocess a source file
+vector3.cpp.i:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/vector3.cpp.i
+.PHONY : vector3.cpp.i
+
+vector3.s: vector3.cpp.s
+
+.PHONY : vector3.s
+
+# target to generate assembly for a file
+vector3.cpp.s:
+	$(MAKE) -f CMakeFiles/vector.dir/build.make CMakeFiles/vector.dir/vector3.cpp.s
+.PHONY : vector3.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... vector"
+	@echo "... Vector2.o"
+	@echo "... Vector2.i"
+	@echo "... Vector2.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... vector2.o"
+	@echo "... vector2.i"
+	@echo "... vector2.s"
+	@echo "... vector3.o"
+	@echo "... vector3.i"
+	@echo "... vector3.s"
 .PHONY : help
 
 

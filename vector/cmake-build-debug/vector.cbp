@@ -84,6 +84,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/Vector2.cpp">
+			<Option target="vector"/>
+		</Unit>
+		<Unit filename="/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/Vector2.h">
+			<Option target="vector"/>
+		</Unit>
+		<Unit filename="/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/vector2.cpp">
+			<Option target="vector"/>
+		</Unit>
+		<Unit filename="/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/vector2.h">
+			<Option target="vector"/>
+		</Unit>
+		<Unit filename="/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/vector3.cpp">
+			<Option target="vector"/>
+		</Unit>
+		<Unit filename="/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/vector3.h">
+			<Option target="vector"/>
+		</Unit>
 		<Unit filename="/home/fedor/CLionProjects/4 semester/4sem/vector/main.cpp">
 			<Option target="vector"/>
 		</Unit>

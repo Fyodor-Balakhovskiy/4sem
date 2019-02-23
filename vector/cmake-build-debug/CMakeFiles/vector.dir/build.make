@@ -70,17 +70,62 @@ CMakeFiles/vector.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vector.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/fedor/CLionProjects/4 semester/4sem/vector/main.cpp" -o CMakeFiles/vector.dir/main.cpp.s
 
+CMakeFiles/vector.dir/vector3.cpp.o: CMakeFiles/vector.dir/flags.make
+CMakeFiles/vector.dir/vector3.cpp.o: vector3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/vector.dir/vector3.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vector.dir/vector3.cpp.o -c "/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/vector3.cpp"
+
+CMakeFiles/vector.dir/vector3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vector.dir/vector3.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/vector3.cpp" > CMakeFiles/vector.dir/vector3.cpp.i
+
+CMakeFiles/vector.dir/vector3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vector.dir/vector3.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/vector3.cpp" -o CMakeFiles/vector.dir/vector3.cpp.s
+
+CMakeFiles/vector.dir/vector2.cpp.o: CMakeFiles/vector.dir/flags.make
+CMakeFiles/vector.dir/vector2.cpp.o: vector2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/vector.dir/vector2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vector.dir/vector2.cpp.o -c "/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/vector2.cpp"
+
+CMakeFiles/vector.dir/vector2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vector.dir/vector2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/vector2.cpp" > CMakeFiles/vector.dir/vector2.cpp.i
+
+CMakeFiles/vector.dir/vector2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vector.dir/vector2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/vector2.cpp" -o CMakeFiles/vector.dir/vector2.cpp.s
+
+CMakeFiles/vector.dir/Vector2.cpp.o: CMakeFiles/vector.dir/flags.make
+CMakeFiles/vector.dir/Vector2.cpp.o: Vector2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/vector.dir/Vector2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vector.dir/Vector2.cpp.o -c "/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/Vector2.cpp"
+
+CMakeFiles/vector.dir/Vector2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vector.dir/Vector2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/Vector2.cpp" > CMakeFiles/vector.dir/Vector2.cpp.i
+
+CMakeFiles/vector.dir/Vector2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vector.dir/Vector2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/Vector2.cpp" -o CMakeFiles/vector.dir/Vector2.cpp.s
+
 # Object files for target vector
 vector_OBJECTS = \
-"CMakeFiles/vector.dir/main.cpp.o"
+"CMakeFiles/vector.dir/main.cpp.o" \
+"CMakeFiles/vector.dir/vector3.cpp.o" \
+"CMakeFiles/vector.dir/vector2.cpp.o" \
+"CMakeFiles/vector.dir/Vector2.cpp.o"
 
 # External object files for target vector
 vector_EXTERNAL_OBJECTS =
 
 vector: CMakeFiles/vector.dir/main.cpp.o
+vector: CMakeFiles/vector.dir/vector3.cpp.o
+vector: CMakeFiles/vector.dir/vector2.cpp.o
+vector: CMakeFiles/vector.dir/Vector2.cpp.o
 vector: CMakeFiles/vector.dir/build.make
 vector: CMakeFiles/vector.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable vector"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/fedor/CLionProjects/4 semester/4sem/vector/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable vector"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vector.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
