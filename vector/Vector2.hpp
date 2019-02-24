@@ -20,8 +20,7 @@
 возвращает новое значение … по аналогии с += и +)
 Работу методов нужно проверить: в main’е вызвать каждый хотя бы по разу.
  */
-#include <iostream>
-#include <vector>
+
 #pragma once
 
 class Vector2 {
@@ -40,19 +39,20 @@ public:
     Vector2 operator-(const Vector2 &) const;
     Vector2& operator-=(const Vector2 &);
 
-    float operator*(const Vector2 &) const;//скалярное произведение
-    float operator^(const Vector2 &) const;//векторное произведение
+    double operator*(const Vector2 &) const;//скалярное произведение
+    double operator^(const Vector2 &) const;//векторное произведение
 
     Vector2 operator*(double) const;//справа умножить на скаляр(добавить ещё слева)
     friend Vector2 operator*(double, const Vector2 &);
     Vector2 operator/(double) const;//разделить на скаляр
 
-    Vector2 norm(); // возвращает еденичные вектор в том же напралении
-    Vector2 ortgonal();// возвращает пер-ляр (x,y) --> (y,-x)
+    double len() const;// длинна вектора
 
-    float len();// длинна вектора
+    Vector2 norm() const ; // возвращает еденичные вектор в том же напралении
+    Vector2 ortgonal() const;// возвращает пер-ляр (x,y) --> (y,-x)
+
     Vector2 operator-()const;//унарный минус
 
-    Vector2& rotate(double); //вращает себя, в радианах
+    Vector2& rotate(double); //вращает себя, в радианах, против часовой
     Vector2 get_rotated(double) const; // возвращает повёрнутый
 };
