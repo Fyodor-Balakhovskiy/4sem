@@ -8,25 +8,27 @@
 #include "Vector2.hpp"
 
 
-Vector2::Vector2(double x2 = 0.0, double y2 = 0.0)
+Vector2::Vector2(double x2, double y2)
 {
     this->x = x2;
     this->y = y2;
 };
 
+/*
 Vector2::Vector2(const std::vector<double> &point(2))//does such sintax possible?
 {
     this->x = point[0];
     this->y = point[1];
 };
+*/
 
-std::ostream & operator<<(std::ostream & oust, const Vector3 & v)
+std::ostream& operator<<(std::ostream & oust, const Vector2 & v)
 {
-    oust << "(" << v.x << ", "<< v.y << ")" << std::endl;
+    oust << "(" << v.x << ", "<< v.y << ")";
     return oust;
 };
 
-std::istream & operator>>(std::istream & inst, Vector2 & v)
+std::istream& operator>>(std::istream & inst, Vector2 & v)
 {
     inst >> v.x;
     inst >> v.y;
@@ -47,8 +49,8 @@ Vector2 & Vector2::operator+=(const Vector2 & v)
 {
     this->x = this->x + v.x;
     this->y = this->y + v.y;
-    return this;
-};
+    return (*this);//разыменовывая this я получаю сам объект, от которого вызван метод
+};//разве механизм вазврата не создаст его копию и не вернёт наружу её?
 
 Vector2 Vector2::operator-(const Vector2 & v) const
 {
@@ -64,7 +66,7 @@ Vector2 & Vector2::operator-=(const Vector2 & v)
 {
     this->x = this->x - v.x;
     this->y = this->y - v.y;
-    return this;
+    return (*this);
 };
 
 double Vector2::operator*(const Vector2 & v) const//skalar multiplication
@@ -130,7 +132,7 @@ Vector2 Vector2::ortgonal() const
 Vector2 Vector2::operator-() const
 {
     Vector2 vector;
-    vector = this * (-1);
+    vector = (*this) * (-1);
     return vector;
 };
 
@@ -140,10 +142,10 @@ Vector2& Vector2::rotate(double alpha)
     double y1 = this->y;
     this->x = x1 * cos(alpha) - y1 * sin(alpha);
     this->y = x1 * sin(alpha) + y1 * cos(alpha);
-    return this;
+    return (*this);
 };
 
-Vector2 Vector2::get_rotated(double) const
+Vector2 Vector2::get_rotated(double alpha) const
 {
     double x1 = this->x;
     double y1 = this->y;

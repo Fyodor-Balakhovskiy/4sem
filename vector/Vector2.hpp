@@ -28,11 +28,11 @@ private:
     double x;
     double y;
 public:
-    Vector2(double,double);
-    Vector2(std::vector<double>&);
+    Vector2(double x2 = 0.0,double y2 = 0.0);
+    //Vector2(std::vector<double>&);
 
-    friend std::ostream & operator <<(std::ostream & , const Vector2 );
-    friend std::istream & operator >>(std::istream & in, Vector2 );
+    friend std::ostream& operator<<(std::ostream & , const Vector2&);
+    friend std::istream& operator>>(std::istream &, Vector2& );
 
     Vector2 operator+(const Vector2 &) const;
     Vector2& operator+=(const Vector2 &);//здесь мы будем возвращать ссылку на объект,//который у нас был ещё до ввызова этого метода,// если возвращать ссылку на объект, который создан внутри метода, то на выходе//мы получим ссылку, указывающую не на что, так как сам объект уничтожится, по выполнение метода, как локальный
